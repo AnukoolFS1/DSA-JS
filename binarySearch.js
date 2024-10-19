@@ -1,6 +1,4 @@
-const arr = [1, 2, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 6, 6, 6, 6, 6, 6, 6, 6, 6, 7, 7, 7, 7, 7, 7, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8]
-
-
+const arr = [1, 2, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 5, 5, 5, 7, 7, 7, 7, 8, 8, 8, 8, 8]
 
 
 function firstAndLastIndex(arr, target) {
@@ -61,17 +59,12 @@ function firstAndLastIndex(arr, target) {
     return [lowestIndex, highestIndex]
 }
 
-const start1 = new Date().getTime()
-
 const result = firstAndLastIndex(arr, 4)
 
-const end = new Date().getTime() - start1
-
-console.log(end)
 console.log(result)
 
 
-
+////////////////// ChatGpt //////////////////////////
 function firstAndLastIndex(arr, target) {
     // Helper function to find first or last index
     function binarySearch(arr, target, findFirst) {
@@ -109,11 +102,7 @@ function firstAndLastIndex(arr, target) {
     return [firstIndex, lastIndex];
 }
 
-const start = new Date().getTime()
 
-// Example usage
 const result2 = firstAndLastIndex(arr, 4);
-const end2 = new Date().getTime() - start
-console.log(end2)
 
-console.log(result); // Output: [4, 9]
+console.log(result2); 
