@@ -33,3 +33,17 @@ function reverseString(str){
 }
 
 console.log(reverseString('anukool'))
+
+
+///// count digits
+
+const countDigits = (num, count = 0) => {
+    if(num === 0){
+        return count
+    }
+    count++
+
+    return countDigits(Math.floor(num/10), count)
+}
+
+console.log(countDigits(123456789))
