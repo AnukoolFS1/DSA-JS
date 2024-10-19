@@ -20,3 +20,16 @@ function sumArray(arr) {
 }
 
 console.log(sumArray([1, 2, 3, 4, 5]))
+
+
+///// reverse string
+
+function reverseString(str){
+    if(str.length === 0){
+        return ''
+    }
+
+    return str[str.length - 1] + reverseString(str.slice(0, str.length - 1))
+}
+
+console.log(reverseString('anukool'))
